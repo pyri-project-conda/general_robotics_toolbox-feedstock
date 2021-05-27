@@ -1,0 +1,27 @@
+package:
+  name: general_robotics_toolbox
+  version: 0.1.1
+
+source:
+  git_url: git@github.com:rpiRobotics/rpi_general_robotics_toolbox_py.git
+  git_rev: HEAD
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . -vv"
+  noarch: python
+
+requirements:
+  host:
+    - pip
+    - python
+    - numpy
+  run:
+    - python
+    - numpy
+
+about:
+  home: https://github.com/rpiRobotics/rpi_general_robotics_toolbox_py
+  license: BSD
+  summary: Python robotics toolbox
+
