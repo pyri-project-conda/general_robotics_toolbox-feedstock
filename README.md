@@ -26,19 +26,19 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-general_robotics_toolbox-green.svg)](https://anaconda.org/p/general_robotics_toolbox) | [![Conda Downloads](https://img.shields.io/conda/dn/p/general_robotics_toolbox.svg)](https://anaconda.org/p/general_robotics_toolbox) | [![Conda Version](https://img.shields.io/conda/vn/p/general_robotics_toolbox.svg)](https://anaconda.org/p/general_robotics_toolbox) | [![Conda Platforms](https://img.shields.io/conda/pn/p/general_robotics_toolbox.svg)](https://anaconda.org/p/general_robotics_toolbox) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-general_robotics_toolbox-green.svg)](https://anaconda.org/pyri-project/general_robotics_toolbox) | [![Conda Downloads](https://img.shields.io/conda/dn/pyri-project/general_robotics_toolbox.svg)](https://anaconda.org/pyri-project/general_robotics_toolbox) | [![Conda Version](https://img.shields.io/conda/vn/pyri-project/general_robotics_toolbox.svg)](https://anaconda.org/pyri-project/general_robotics_toolbox) | [![Conda Platforms](https://img.shields.io/conda/pn/pyri-project/general_robotics_toolbox.svg)](https://anaconda.org/pyri-project/general_robotics_toolbox) |
 
 Installing general_robotics_toolbox
 ===================================
 
-Installing `general_robotics_toolbox` from the `p` channel can be achieved by adding `p` to your channels with:
+Installing `general_robotics_toolbox` from the `pyri-project` channel can be achieved by adding `pyri-project` to your channels with:
 
 ```
-conda config --add channels p
+conda config --add channels pyri-project
 conda config --set channel_priority strict
 ```
 
-Once the `p` channel has been enabled, `general_robotics_toolbox` can be installed with:
+Once the `pyri-project` channel has been enabled, `general_robotics_toolbox` can be installed with:
 
 ```
 conda install general_robotics_toolbox
@@ -47,7 +47,7 @@ conda install general_robotics_toolbox
 It is possible to list all of the versions of `general_robotics_toolbox` available on your platform with:
 
 ```
-conda search general_robotics_toolbox --channel p
+conda search general_robotics_toolbox --channel pyri-project
 ```
 
 
@@ -61,8 +61,8 @@ package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
-`p` channel, whereupon the built conda packages will be available for
-everybody to install and use from the `p` channel.
+`pyri-project` channel, whereupon the built conda packages will be available for
+everybody to install and use from the `pyri-project` channel.
 Note that all branches in the pyri-project/general_robotics_toolbox-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
