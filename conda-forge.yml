@@ -3,7 +3,7 @@ github:
 
 channels:
   targets:
-    - pyri-project main
+    - [pyri-project, main]
 
 provider:
   linux: github_actions
