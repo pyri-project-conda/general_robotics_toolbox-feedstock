@@ -1,11 +1,11 @@
-About general_robotics_toolbox
-==============================
+About general_robotics_toolbox-feedstock
+========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/pyri-project/general_robotics_toolbox-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/rpiRobotics/rpi_general_robotics_toolbox_py
 
 Package license: BSD
-
-Feedstock license: [BSD-3-Clause](https://github.com/pyri-project/general_robotics_toolbox-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python robotics toolbox
 
@@ -38,16 +38,41 @@ conda config --add channels pyri-project
 conda config --set channel_priority strict
 ```
 
-Once the `pyri-project` channel has been enabled, `general_robotics_toolbox` can be installed with:
+Once the `pyri-project` channel has been enabled, `general_robotics_toolbox` can be installed with `conda`:
 
 ```
 conda install general_robotics_toolbox
 ```
 
-It is possible to list all of the versions of `general_robotics_toolbox` available on your platform with:
+or with `mamba`:
+
+```
+mamba install general_robotics_toolbox
+```
+
+It is possible to list all of the versions of `general_robotics_toolbox` available on your platform with `conda`:
 
 ```
 conda search general_robotics_toolbox --channel pyri-project
+```
+
+or with `mamba`:
+
+```
+mamba search general_robotics_toolbox --channel pyri-project
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search general_robotics_toolbox --channel pyri-project
+
+# List packages depending on `general_robotics_toolbox`:
+mamba repoquery whoneeds general_robotics_toolbox --channel pyri-project
+
+# List dependencies of `general_robotics_toolbox`:
+mamba repoquery depends general_robotics_toolbox --channel pyri-project
 ```
 
 
